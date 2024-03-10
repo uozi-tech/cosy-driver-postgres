@@ -1,2 +1,2 @@
 # postgres
- PostgresSQL driver for Cosy
+PostgresSQL driver for Cosy

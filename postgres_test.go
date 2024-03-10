@@ -1,7 +1,7 @@
 package postgres
 
 import (
-	"github.com/0xJacky/cosy/settings"
+	"git.uozi.org/uozi/cosy/settings"
 	"gorm.io/driver/postgres"
 	"testing"
 )

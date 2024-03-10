@@ -1,9 +1,9 @@
-module github.com/0xJacky/cosy-driver-postgres
+module git.uozi.org/uozi/cosy-driver-postgres
 
 go 1.22
 
 require (
-	github.com/0xJacky/cosy v0.0.0-20240307032449-9e496e54a2d3
+	git.uozi.org/uozi/cosy v0.0.3
 	gorm.io/driver/postgres v1.5.6
 	gorm.io/gorm v1.25.7
 )
