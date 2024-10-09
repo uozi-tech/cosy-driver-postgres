@@ -2,12 +2,19 @@ package postgres
 
 import (
     "fmt"
-    "github.com/uozi-tech/cosy/settings"
     "gorm.io/driver/postgres"
     "gorm.io/gorm"
 )
 
-func Open(dbs *settings.DataBase) gorm.Dialector {
+type DBSettings interface {
+    GetHost() string
+    GetUser() string
+    GetPassword() string
+    GetName() string
+    GetPort() int
+}
+
+func Open(dbs DBSettings) gorm.Dialector {
     return postgres.Open(fmt.Sprintf("host=%s user=%s password=%s dbname=%s port=%d sslmode=disable",
-        dbs.Host, dbs.User, dbs.Password, dbs.Name, dbs.Port))
+        dbs.GetHost(), dbs.GetUser(), dbs.GetPassword(), dbs.GetName(), dbs.GetPort()))
 }
