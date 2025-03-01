@@ -3,7 +3,7 @@ module github.com/uozi-tech/cosy-driver-postgres
 go 1.23
 
 require (
-	gorm.io/driver/postgres v1.5.9
+	gorm.io/driver/postgres v1.5.11
 	gorm.io/gorm v1.25.12
 )
 
